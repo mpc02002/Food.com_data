@@ -4,7 +4,7 @@
 <p>
 The goal of this project is to determine whether the inclusion of a given ingredient in online recipes results in higher overall user ratings.  All scripts are designed to run in Python 3.  Click the binder link to run the Jupyter notebooks.
   
-<h3 The Datasets </h3>
+<h3> The Datasets </h3>
 <p>
 We use datasets containing over 180K recipes from Food.com, together with over 700K user ratings, obtained from <a href="https://www.kaggle.com/shuyangli94/food-com-recipes-and-user-interactions">Kaggle.com</a>.   The raw datasets were too large to upload directly, so they were broken up into smaller csv files using a short simple Python script.  The main script ingredient_tester2.py reassembles them before working with them.
   
