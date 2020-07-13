@@ -32,9 +32,9 @@ def get_cleaned_datasets(ingr):
     if os.access("datasets-raw/",os.F_OK):
         print('Extracting and cleaning data ...\n')
         df1 = pd.read_csv('datasets-raw/PP_recipes1.csv')
-        columns = df1.columns.tolist()
-        df2 = pd.read_csv('datasets-raw/PP_recipes2.csv', names=columns)
-        df = pd.concat([df1,df2],ignore_index=True)
+        df2 = pd.read_csv('datasets-raw/PP_recipes2.csv')
+        df3 = pd.read_csv('datasets-raw/PP_recipes3.csv')
+        df = pd.concat([df1,df2,df3],ignore_index=True)
         df = df[['i','ingredient_ids']].set_index('i').sort_index()
         interactions = pd.read_csv('datasets-raw/RAW_interactions1.csv')
         for i in [2,3,4,5]:
