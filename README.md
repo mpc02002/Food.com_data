@@ -18,6 +18,6 @@ Lastly, the user is asked whether they want to plot the rating distributions for
 
 <h3> Some Results </h3>
 <p>
-Some ingredients appear to have a strong detractive effect on user ratings: for example, kale and lamb almost certainly lower the mean rating of recipes which include them.  Other ingredients, like tofu and apple, appear to have a positive effect on mean ratings.  We invite the user to look for other interesting conclusions.
+Some ingredients appear to have a strong detractive effect on user ratings: for example, kale and lamb almost certainly lower the mean rating of recipes which include them.  Other ingredients, like tofu and apple, appear to have a positive effect on mean ratings.  I invite the reader to look for other interesting conclusions.
   
 This project is still in progress.
