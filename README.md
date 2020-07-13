@@ -1,4 +1,5 @@
 # Food.com_data
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mpc02002/Food.com_data/master?filepath=%2Fingredient_tester.ipynb)
 
 <h3> Overview </h3>
 <p>
