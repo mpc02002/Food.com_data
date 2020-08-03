@@ -1,9 +1,9 @@
 # Food.com_data
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mpc02002/Food.com_data/master?filepath=%2Fingredient_tester.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mpc02002/Food.com_data/master?filepath=%2Frecipe_complexity_analysis.ipynb)
 
 <h3> Overview </h3>
 <p>
-The goal of this project is to conduct analysis of the impact of various features of recipes (like length, complexity, technique inclusion, and ingredient inclusion) on their overall user ratings.  At present the project contains (1) a detailed analysis of the effect of recipe complexity on user ratings, and (2) a standalone script which allows the user to run a statistical test on the impact of a particular choice of ingredient on user ratings.  All scripts are designed to run in Python 3.  Click the "launch binder" link above to run the Jupyter notebook version.
+The goal of this project is to conduct analysis of the impact of various features of recipes (like length, complexity, technique inclusion, and ingredient inclusion) on their overall user ratings.  At present the project contains (1) a detailed analysis of the effect of recipe complexity on user ratings, and (2) a standalone script which allows the user to run a statistical test on the impact of a particular choice of ingredient on user ratings.  All scripts are designed to run in Python 3.
   
 <h3> The Datasets </h3>
 <p>
@@ -15,7 +15,7 @@ The Jupyter Notebook recipe_complexity_analysis.ipynb contains a statistical and
 
 We study complexity in two forms: (1) "naive" complexity measures, namely duration of cook time, number of steps, and number of ingredients, and (2) inclusion of particular techniques, like barbecue, emulsification, or poaching.  We extract these techniques from the recipe descriptions using some nice tools from the Natural Language Toolkit (NLTK).  We analyze connections between these complexity measures and three types of outcomes in terms of user ratings: mean rating, one ratio, and overall distribution of ratings.
 
-The included scripts conduct a large number of Mann-Whitney U-tests to determine which techniques have a statistically significant impact on outcomes.  
+The included scripts conduct a large number of Mann-Whitney U-tests to determine which techniques have a statistically significant impact on outcomes.  Click the "launch binder" link above to run the Jupyter notebook version. 
   
 <h3> The Ingredient Tester </h3>
 <p>
