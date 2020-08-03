@@ -67,15 +67,22 @@ def test_datasets(ingr):
     else:
         print('Applying Mann-Whitney U-Test ...')
         print()
-        (s, p) = stats.mannwhitneyu(dfGood['rating'],dfBad['rating'],alternative='two-sided')
+        (U, p) = stats.mannwhitneyu(dfGood['rating'],dfBad['rating'],alternative='less')
+        rho = U / (countGood * countBad)
         if p <= 0.01:
-            print('With 99% confidence, we reject the hypothesis that the two distributions have the same mean.  (p = '+str(p)+')')
+            print('With 99% confidence, we reject the null hypothesis.  A random rating of a recipe which includes '+ingr+' is likely to be lower than a random rating of a recipe without '+ingr+'.  (p = '+str(p)+', sample probability = '+str(1-rho)+')')
         elif p <= 0.05:
-            print('With 95% confidence, we reject the hypothesis that the two distributions have the same mean.  (p = '+str(p)+')')
+            print('With 95% confidence, we reject the null hypothesis.  A random rating of a recipe which includes '+ingr+' is likely to be lower than a random rating of a recipe without '+ingr+'.  (p = '+str(p)+', sample probability = '+str(1-rho)+')')
         elif p <= 0.1:
-            print('With 90% confidence, we reject the hypothesis that the two distributions have the same mean.  (p = '+str(p)+')')
+            print('With 90% confidence, we reject the null hypothesis.  A random rating of a recipe which includes '+ingr+' is likely to be lower than a random rating of a recipe without '+ingr+'.  (p = '+str(p)+', sample probability = '+str(1-rho)+')')
+        elif p >= 0.99:
+            print('With 99% confidence, we reject the null hypothesis.  A random rating of a recipe which includes '+ingr+' is likely to be higher than a random rating of a recipe without '+ingr+'.  (p = '+str(p)+', sample probability = '+str(rho)+')')
+        elif p >= 0.95:
+            print('With 95% confidence, we reject the null hypothesis.  A random rating of a recipe which includes '+ingr+' is likely to be higher than a random rating of a recipe without '+ingr+'.  (p = '+str(p)+', sample probability = '+str(rho)+')')
+        elif p >= 0.9:
+            print('With 90% confidence, we reject the null hypothesis.  A random rating of a recipe which includes '+ingr+' is likely to be higher than a random rating of a recipe without '+ingr+'.  (p = '+str(p)+', sample probability = '+str(rho)+')')
         else:
-            print('We cannot reject the hypothesis that the distributions have the same mean.  (p = '+str(p)+')')
+            print('We cannot reject the null hypothesis that the probability that a random rating of a recipe which includes '+ingr+' is lower than a random rating of a recipe without '+ingr+' is equal to the probability that it is higher.  (p = '+str(p)+')')
     plotans = input('Plot the rating comparison for recipes'+
                      ' with/without this ingredient? (y/n) ')
     if plotans.lower() == 'y':

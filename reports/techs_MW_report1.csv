@@ -1,0 +1,38 @@
+techniques,recipes_with,recipes_without,U_statistic,p_value,rho_value,summary
+blanche,109,127991,6363020.5,0.051323989880287246,0.45609718544573696,We cannot reject the null hypothesis.
+poach,289,127811,17805876.5,0.13885411058925123,0.48205576524528176,We cannot reject the null hypothesis.
+fillet,1273,126827,79735522.5,0.21905483337074583,0.49386894844868845,We cannot reject the null hypothesis.
+tenderize,120,127980,7418757.5,0.25447920085657755,0.48306750403708915,We cannot reject the null hypothesis.
+cure,981,127119,61857671.5,0.32979489572895004,0.49603702339670824,We cannot reject the null hypothesis.
+puree,3662,124438,226916474.0,0.33236520827177546,0.49796023610300466,We cannot reject the null hypothesis.
+caramelize,823,127277,52056378.0,0.3785240727076281,0.49696314439212963,We cannot reject the null hypothesis.
+steam,3007,125093,187870440.0,0.4577228683318298,0.49944999882508434,We cannot reject the null hypothesis.
+ferment,63,128037,4003257.5,0.4582628705431423,0.4962922424085994,We cannot reject the null hypothesis.
+saute,11131,116969,650613776.5,0.4585664064176975,0.49971029321628707,We cannot reject the null hypothesis.
+parboil,121,127979,7703571.0,0.4605520954511093,0.4974712728889728,We cannot reject the null hypothesis.
+baste,835,127265,53115104.5,0.4930543751939926,0.49983030364054826,We cannot reject the null hypothesis.
+curdle,149,127951,9577478.0,0.5409685219050429,0.5023671236561353,We cannot reject the null hypothesis.
+barbecue,892,127208,56920953.0,0.5690549823145705,0.5016408368850649,We cannot reject the null hypothesis.
+sear,798,127302,51014765.0,0.5864825945505105,0.5021781035832579,We cannot reject the null hypothesis.
+smoke,878,127222,56116339.5,0.5988590298608059,0.5023802982958528,We cannot reject the null hypothesis.
+macerate,31,128069,2054898.5,0.6363876802639281,0.5175885529448717,We cannot reject the null hypothesis.
+stew,886,127214,56859898.5,0.6817511217436929,0.5044724454458123,We cannot reject the null hypothesis.
+deglaze,552,127548,35641020.5,0.6982197495960916,0.5062177856429612,We cannot reject the null hypothesis.
+glaze,2244,125856,142090884.5,0.698977559107598,0.5031175193203856,We cannot reject the null hypothesis.
+fry,11396,116704,667380902.5,0.7439065481045656,0.5018057029502653,We cannot reject the null hypothesis.
+dredge,1215,126885,78003273.0,0.7697444760456597,0.505971743636821,We cannot reject the null hypothesis.
+casserole,5281,122819,326436047.0,0.7976932170978865,0.5032877798774892,We cannot reject the null hypothesis.
+emulsify,58,128042,3952344.0,0.8087715820198733,0.5321992945202786,We cannot reject the null hypothesis.
+marinate,3188,124912,200877542.5,0.8110412972799541,0.5044392971598053,We cannot reject the null hypothesis.
+grill,6368,121732,390097932.5,0.814574178097081,0.5032292038274787,We cannot reject the null hypothesis.
+shuck,38,128062,2644266.0,0.8295574962243804,0.5433770155738709,We cannot reject the null hypothesis.
+simmer,21531,106569,1152109236.0,0.8427502425847853,0.502109648354661,We cannot reject the null hypothesis.
+pressure,318,127782,20969537.0,0.8457441595165185,0.5160503063934853,We cannot reject the null hypothesis.
+braise,119,127981,8044732.0,0.8635369595868665,0.5282252046473023,We cannot reject the null hypothesis.
+brine,213,127887,14213395.5,0.8711199993076564,0.5217852974737711,We cannot reject the null hypothesis.
+sweat,266,127834,17670714.5,0.8731782148838247,0.5196681439898383,We cannot reject the null hypothesis.
+degrease,38,128062,2739531.0,0.9165521782342837,0.5629532652358356,We cannot reject the null hypothesis.
+zest,3085,125015,195901260.5,0.9398754130051679,0.5079487978460413,We cannot reject the null hypothesis.
+boil,30994,97106,1514541036.5,0.9606190590273155,0.5032193719208004,"95% confidence rejection of null hypothesis.  We estimate a random recipe with ""boil"" will receive a higher mean rating than a random recipe without ""boil"" with probability 0.5032193719208004."
+roast,5183,122917,323360155.5,0.9713492634293875,0.5075669601888548,"95% confidence rejection of null hypothesis.  We estimate a random recipe with ""roast"" will receive a higher mean rating than a random recipe without ""roast"" with probability 0.5075669601888548."
+microwave,5065,123035,316805212.5,0.9812791917010378,0.5083750115487727,"95% confidence rejection of null hypothesis.  We estimate a random recipe with ""microwave"" will receive a higher mean rating than a random recipe without ""microwave"" with probability 0.5083750115487727."
