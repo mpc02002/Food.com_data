@@ -27,7 +27,7 @@ We use the Mann-Whitney U-Test because the ratings consist of ordinal data which
 
 Lastly, the user is asked whether they want to plot the rating distributions for recipes with ingr vs. recipes without ingr.  If the user affirms, then a bar plot is exported to the filename 'plot.png'.
 
-<h3> Some Results </h3>
+<h3> Survey of Results </h3>
 <p>
 The investigations conducted in recipe_complexity_analysis.ipynb find no evidence of correlation between any of the naive measures (cook time, number of steps, number of ingredients) with the outcomes of mean rating or one ratio.
 
