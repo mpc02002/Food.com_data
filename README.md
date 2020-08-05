@@ -1,7 +1,7 @@
 # Food.com_data
 <h3> Overview </h3>
 <p>
-The goal of this project is to conduct analysis of the impact of various features of recipes (like length, complexity, technique inclusion, and ingredient inclusion) on their overall user ratings.  At present the project contains (1) a detailed analysis of the effect of recipe complexity on user ratings, and (2) a standalone script which allows the user to run a statistical test on the impact of a particular choice of ingredient on user ratings.  All scripts are designed to run in Python 3.
+The goal of this project is to conduct analysis of the impact of various features of recipes (like length, complexity, technique inclusion, and ingredient inclusion) on their overall user ratings.  At present the project contains (1) a detailed analysis of the effect of recipe complexity on user ratings, and (2) a standalone script which allows the user to run a statistical test on the impact of a particular choice of ingredient on user ratings.  All scripts are designed to run in Python 3.  This repository was last updated 8/5/20.
   
 <h3> The Datasets </h3>
 <p>
@@ -33,8 +33,12 @@ The investigations conducted in recipe_complexity_analysis.ipynb find no evidenc
 
 On the other hand, we find strong evidence that inclusion of the technique 'caramelize' is damaging to user ratings of recipes.  A random recipe with 'caramelize' is likely to have a higher one ratio than a random recipe without (sample probability 50.64%; null hypothesis rejected with 95% confidence), and a random user rating of a recipe with 'caramelize' will be lower than than one without (sample probability 51.52%; null hypothesis rejected with 99% confidence).
 
- We find evidence that inclusion of the technique 'roast' improves mean ratings (sample probability 50.76%, null hypothesis rejected with 95% confidence), as does the technique 'microwave' improves mean ratings (sample probability 50.84%, null hypothesis rejected with 95% confidence).  Moreover, 'roast' and 'microwave' both decrease the one ratio and increase the overall rating distribution in the analyzed sample.  But the latter two findings are not statistically significant, so more evidence is needed to assume that 'roast' improves user ratings.
+ We find evidence that inclusion of the technique 'roast' improves mean ratings (sample probability 50.76%, null hypothesis rejected with 95% confidence), as does the technique 'microwave' (sample probability 50.84%, null hypothesis rejected with 95% confidence).  Moreover, 'roast' and 'microwave' both decrease the one ratio and increase the overall rating distribution in the analyzed sample.  But the latter two findings are not statistically significant, so more evidence is needed to definitively conclude that 'roast' and 'microwave' improve user ratings.
 
  We find with high confidence that 'steam', 'brine', 'boil', 'baste', and 'barbecue' damage rating distributions, but may actually lower one ratio or increase mean rating (in the case of 'boil', in a statistically significant way).  Conversely, we with high confidence that 'puree', and 'pressure' improve mean ratings or decrease one ratios, but they each appear to damage overall rating distributions in the analyzed sample.  So we regard these latter findings as inconclusive.  A deeper or more subtle analysis could improve these findings.
   
 The script ingredient_tester2.py produces strong evidence that certain ingredients have a detractive effect on user ratings.  For example, kale and lamb almost certainly lower the mean rating of recipes which include them, with confidence over 99%.  Other ingredients, like tofu and apple, appear to have a positive effect on mean ratings, although the evidence is less conclusive for tofu.  I invite the reader to look for other interesting conclusions!  This project will soon be updated with a report on ingredient inclusion.
+
+<h3> What Comes Next? </h3>
+<p>
+My next focus in analyzing this dataset is to focus not on user rating outcomes but on traffic outcomes-- can we predict when a recipe will receive a large number of user interactions?  Presumably recipes with a large number of interactions generate more hit traffic and greater ad revenue for the site hosts.  My next update will attempt to shed light on this question.
