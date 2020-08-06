@@ -37,7 +37,7 @@ We find evidence that inclusion of the techniques 'grill', 'marinate', 'roast', 
 
 The following heatmap summarizes our probability estimates for mean rating, one ratio, and individual rating for each technique studied.  The visual shorthand is that GREEN means higher ratings, and PURPLE means lower ratings.
 
-![Probability Estimate Heatmap](https://github.com/mpc02002/techniques_probs_heatmap.png)
+![Probability Estimate Heatmap](https://github.com/mpc02002/Food.com_data/techniques_probs_heatmap.png)
   
 The script ingredient_tester2.py produces strong evidence that certain ingredients have a detractive effect on user ratings.  For example, kale and lamb almost certainly lower the mean rating of recipes which include them, with confidence over 99%.  Other ingredients, like tofu and apple, appear to have a positive effect on mean ratings, although the evidence is less conclusive for tofu.  I invite the reader to look for other interesting conclusions!  This project will soon be updated with a report on ingredient inclusion.
 
