@@ -34,6 +34,10 @@ The investigations conducted in recipe_complexity_analysis.ipynb find no evidenc
 On the other hand, we find strong evidence that inclusion of the techniques 'casserole', 'pressure', 'fry', 'steam', 'simmer', and 'boil' are damaging to user ratings of recipes. With high confidence, a random recipe with one of these techniques will have a lower mean rating than one without, and a random rating of a recipe with one of these techniques will be lower than a random rating of one without. The probability gaps are especially striking in for 'casserole' (lower mean 53.5% chance, lower individual rating 52.1% chance, null hypotheses rejected with 99% confidence) and for 'pressure' (lower mean 56.6% chance, lower individual rating 51.4% chance, null hypotheses rejected with 99% confidence).
 
 We find evidence that inclusion of the techniques 'grill', 'marinate', 'roast', and 'emulsify' improve mean ratings, lower one ratios, and increase overall rating distributions, so they correspond to improved rating outcomes across all three of our metrics, although our confidence levels are not as high as they are for the negative results in the preceding paragraph.
+
+The following heatmap summarizes our probability estimates for mean rating, one ratio, and individual rating for each technique studied.  The visual shorthand is that GREEN means higher ratings, and PURPLE means lower ratings.
+
+![Probability Estimate Heatmap](https://github.com/mpc02002/techniques_probs_heatmap.png)
   
 The script ingredient_tester2.py produces strong evidence that certain ingredients have a detractive effect on user ratings.  For example, kale and lamb almost certainly lower the mean rating of recipes which include them, with confidence over 99%.  Other ingredients, like tofu and apple, appear to have a positive effect on mean ratings, although the evidence is less conclusive for tofu.  I invite the reader to look for other interesting conclusions!  This project will soon be updated with a report on ingredient inclusion.
 
