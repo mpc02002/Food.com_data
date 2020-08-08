@@ -1,7 +1,7 @@
 # Food.com_data
 <h3> Overview </h3>
 <p>
-The goal of this project is to conduct analysis of the impact of various features of recipes (like length, complexity, technique inclusion, and ingredient inclusion) on their overall user ratings.  At present the project contains (1) a detailed analysis of the effect of recipe complexity on user ratings, and (2) a standalone script which allows the user to run a statistical test on the impact of a particular choice of ingredient on user ratings.  All scripts are designed to run in Python 3.  This repository was last updated 8/5/20.
+The goal of this project is to conduct analysis of the impact of various features of recipes (like length, complexity, technique inclusion, and ingredient inclusion) on their overall user ratings.  At present the project contains (1) a detailed analysis of the effect of recipe complexity on user ratings, and (2) a standalone script which allows the user to run a statistical test on the impact of a particular choice of ingredient on user ratings.  All scripts are designed to run in Python 3.  This repository was last updated 8/8/20.
   
 <h3> The Datasets </h3>
 <p>
